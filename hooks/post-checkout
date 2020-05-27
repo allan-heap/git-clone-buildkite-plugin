@@ -3,4 +3,4 @@ set -euo pipefail
 
 echo "cloning repository ${BUILDKITE_PLUGIN_GIT_CLONE_REPOSITORY}"
 
-git clone ${BUILDKITE_PLUGIN_GIT_CLONE_REPOSITORY}
+git clone ${BUILDKITE_PLUGIN_GIT_CLONE_REPOSITORY} --branch "${BUILDKITE_PLUGIN_GIT_CLONE_BRANCH:-master}"
